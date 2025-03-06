@@ -1,9 +1,8 @@
 import axios from 'axios';
 import { IpApiResponse, WeatherApiResponse, ipApiResponseSchema, weatherApiResponseSchema, WeatherData } from './types';
+import { IP_API_BASE_URL, WEATHER_API_BASE_URL } from './config';
 
-// Base URLs for the APIs
-const IP_API_BASE_URL = 'http://ip-api.com';
-const WEATHER_API_BASE_URL = 'https://api.weatherapi.com';
+// Base URLs for the APIs are now imported from config.ts
 
 /**
  * Fetches the user's location data based on their IP address

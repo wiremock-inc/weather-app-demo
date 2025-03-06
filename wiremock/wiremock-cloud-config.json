@@ -1,0 +1,16 @@
+{
+  "name": "weather-app-mocks",
+  "description": "Mock APIs for the Weather App",
+  "version": "1.0.0",
+  "maintainer": "dev@example.com",
+  "apis": [
+    {
+      "name": "IP API",
+      "baseUrl": "http://ip-api.com"
+    },
+    {
+      "name": "Weather API",
+      "baseUrl": "https://api.weatherapi.com"
+    }
+  ]
+} 

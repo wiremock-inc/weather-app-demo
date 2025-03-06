@@ -1,0 +1,32 @@
+{
+  "mappings": [
+    {
+      "name": "IP API - Get Location",
+      "request": {
+        "urlPathTemplate": "/json/"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "jsonBody": {
+          "status": "success",
+          "country": "United Kingdom",
+          "countryCode": "GB",
+          "region": "ENG",
+          "regionName": "England",
+          "city": "London",
+          "zip": "SW1A",
+          "lat": 51.5074,
+          "lon": -0.1278,
+          "timezone": "Europe/London",
+          "isp": "Mock ISP",
+          "org": "Mock Organization",
+          "as": "AS12345 Mock AS",
+          "query": "192.168.1.1"
+        }
+      }
+    }
+  ]
+} 

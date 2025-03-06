@@ -13,6 +13,7 @@ A simple web application that displays the local weather based on the user's IP 
   - Humidity
 - Responsive design for all device sizes
 - Loading and error states
+- WireMock Cloud integration for development and testing
 
 ## Technologies Used
 
@@ -22,6 +23,7 @@ A simple web application that displays the local weather based on the user's IP 
 - Axios for API requests
 - Zod for data validation
 - Lucide React for icons
+- WireMock Cloud for API mocking
 
 ## Prerequisites
 
@@ -57,6 +59,8 @@ npm run dev
 
 The application will be available at [http://localhost:3000](http://localhost:3000).
 
+In development mode, the application automatically uses WireMock Cloud mock APIs instead of the real APIs. This allows for development and testing without making actual API calls.
+
 ### Run with environment variable inline
 
 You can also set the environment variable directly when running the application:
@@ -64,6 +68,15 @@ You can also set the environment variable directly when running the application:
 ```bash
 NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here npm run dev
 ```
+
+## WireMock Cloud Setup
+
+The application is configured to use WireMock Cloud mock APIs in development mode. The mock APIs are:
+
+1. **IP API** - https://v7437.wiremockapi.cloud
+2. **Weather API** - https://2kd6l.wiremockapi.cloud
+
+For more information about the WireMock Cloud setup, see the [wiremock/README.md](./wiremock/README.md) file.
 
 ## Building for Production
 
@@ -88,6 +101,9 @@ For production deployment, make sure to set the `NEXT_PUBLIC_WEATHER_API_KEY` en
   - `lib/` - Utility functions and API services
   - `page.tsx` - Main page component
   - `layout.tsx` - Root layout component
+- `wiremock/` - WireMock Cloud configuration and mappings
+  - `mappings/` - JSON files defining the mock API responses
+  - `upload-to-wiremock-cloud.sh` - Script to upload mappings to WireMock Cloud
 
 ## License
 
