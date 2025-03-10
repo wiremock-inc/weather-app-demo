@@ -6,8 +6,8 @@
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 // WireMock Cloud endpoints
-const WIREMOCK_IP_API_URL = 'https://v7437.wiremockapi.cloud';
-const WIREMOCK_WEATHER_API_URL = 'https://2kd6l.wiremockapi.cloud';
+const WIREMOCK_IP_API_URL = 'https://v747g.wiremockapi.cloud';
+const WIREMOCK_WEATHER_API_URL = 'https://2kdkq.wiremockapi.cloud';
 
 // Production endpoints
 const PROD_IP_API_URL = 'http://ip-api.com';
