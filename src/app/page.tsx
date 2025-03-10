@@ -1,4 +1,5 @@
 import WeatherTile from './components/WeatherTile';
+import TodoList from './components/TodoList';
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
           Local Weather Dashboard
         </h1>
         
-        <WeatherTile />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <WeatherTile />
+          <TodoList />
+        </div>
         
         <footer className="mt-12 text-center text-sm text-gray-500">
           <p>
