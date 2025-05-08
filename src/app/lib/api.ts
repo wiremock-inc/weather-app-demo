@@ -3,7 +3,7 @@ import { IpApiResponse, WeatherApiResponse, ipApiResponseSchema, weatherApiRespo
 
 // Base URLs for the APIs
 const IP_API_BASE_URL = 'http://ip-api.com';
-const WEATHER_API_BASE_URL = 'https://api.weatherapi.com';
+const WEATHER_API_BASE_URL = 'https://6ry84.wiremockapi.cloud';
 
 /**
  * Fetches the user's location data based on their IP address
